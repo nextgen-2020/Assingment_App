@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, SafeAreaView, Dimensions } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { setAnswer } from '../redux/store';
-import ProgressBar from 'react-native-progress/Bar'; // Import ProgressBar
+import ProgressBar from 'react-native-progress/Bar'; 
 import { COLORS } from '../helper/colors';
 import { questions } from '../helper/question';
 import {styles} from './Screen.styles'
