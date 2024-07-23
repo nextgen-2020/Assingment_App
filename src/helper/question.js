@@ -36,4 +36,25 @@
       scores: [1, 2, 3, 4],
       colors: [COLORS.primary, COLORS.secondary, COLORS.third, COLORS.fourth],
     },
+    {
+        id: 5,
+        text: 'What is your current annual income?',
+        options: ['Below $30,000', '$30,000 - $60,000', '$60,000 - $100,000', 'Above $100,000'],
+        scores: [1, 2, 3, 4],
+        colors: [COLORS.primary, COLORS.secondary, COLORS.third, COLORS.fourth],
+      },
+      {
+        id: 6,
+        text: 'What is your current level of debt?',
+        options: ['No debt', 'Low debt (e.g., credit cards, small loans)', 'Moderate debt (e.g., car loans, student loans)', 'High debt (e.g., mortgages, significant loans)'],
+        scores: [1, 2, 3, 4],
+        colors: [COLORS.primary, COLORS.secondary, COLORS.third, COLORS.fourth],
+      },
+      {
+        id: 7,
+        text: 'Do you have an emergency fund',
+        options: ['Yes, sufficient to cover 6 months of expenses', 'Yes, but less than 6 months of expenses', 'No, but I am planning to build one', 'No, I do not have an emergency fund'],
+        scores: [1, 2, 3, 4],
+        colors: [COLORS.primary, COLORS.secondary, COLORS.third, COLORS.fourth],
+      },
   ];
