@@ -15,7 +15,6 @@ describe('App component', () => {
       </Provider>
     );
 
-    // Example: Adjust this test based on your actual component's UI
-    expect(getByText('Some Text in App')).toBeTruthy();
+    expect(getByText('app-navigator')).toBeTruthy();
   });
 });
