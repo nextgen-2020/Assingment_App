@@ -5,7 +5,7 @@ import { setAnswer } from '../redux/store';
 import ProgressBar from 'react-native-progress/Bar'; // Import ProgressBar
 import { COLORS } from '../helper/colors';
 import { questions } from '../helper/question';
-import {styles} from './QuestionScreen.styles'
+import {styles} from './Screen.styles'
 const { width } = Dimensions.get('window');
 
 const QuestionScreen = ({ navigation, route }) => {

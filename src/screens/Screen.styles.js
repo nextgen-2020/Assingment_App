@@ -1,7 +1,7 @@
-import {StyleSheet,Dimensions} from 'react-native';
-import {COLORS } from '../helper/colors'
+import {StyleSheet, Dimensions} from 'react-native';
+import {COLORS} from '../helper/colors';
 
-const { width } = Dimensions.get('window');
+const {width} = Dimensions.get('window');
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -56,6 +56,14 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     textAlign: 'center',
   },
+
+  overlayView: {
+    flex: 1,
+    backgroundColor: COLORS.overlay,
+    padding: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   resultContainer: {
     alignItems: 'center',
     backgroundColor: '#fff',
@@ -86,7 +94,6 @@ export const styles = StyleSheet.create({
     color: COLORS.fifth,
     marginBottom: 30,
   },
-  
   buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',

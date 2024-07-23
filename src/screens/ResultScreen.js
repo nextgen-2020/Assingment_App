@@ -3,13 +3,13 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet,
   SafeAreaView,
   TouchableOpacity,
   Dimensions,
 } from 'react-native';
 import {useSelector} from 'react-redux';
 import {COLORS} from '../helper/colors';
+import {styles} from './Screen.styles'
 
 const {width} = Dimensions.get('window');
 
@@ -25,7 +25,7 @@ const ResultScreen = ({navigation}) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.overlay}>
+      <View style={styles.overlayView}>
         <View style={styles.resultContainer}>
           <Text style={styles.title}>Your Risk Profile</Text>
           <Text style={styles.score}>Score: {score}</Text>
@@ -43,73 +43,6 @@ const ResultScreen = ({navigation}) => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  backgroundImage: {
-    flex: 1,
-    justifyContent: 'center',
-  },
-  overlay: {
-    flex: 1,
-    backgroundColor: COLORS.overlay,
-    padding: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  resultContainer: {
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    borderRadius: 12,
-    padding: 20,
-    width: width * 0.9,
-    shadowColor: '#000',
-    shadowOffset: {width: 0, height: 4},
-    shadowOpacity: 0.2,
-    shadowRadius: 8,
-    elevation: 5,
-  },
-  title: {
-    fontSize: 26,
-    fontWeight: 'bold',
-    color: COLORS.primary,
-    marginBottom: 15,
-  },
-  score: {
-    fontSize: 22,
-    fontWeight: '600',
-    color: COLORS.text,
-    marginBottom: 10,
-  },
-  category: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: COLORS.fifth,
-    marginBottom: 30,
-  },
-  buttonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    width: '100%',
-  },
-  button: {
-    padding: 15,
-    borderRadius: 10,
-    marginHorizontal: 10,
-    width: '30%',
-    alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: {width: 0, height: 4},
-    shadowOpacity: 0.2,
-    shadowRadius: 6,
-    elevation: 4,
-  },
-  buttonText: {
-    color: COLORS.buttonText,
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-});
+
 
 export default ResultScreen;
